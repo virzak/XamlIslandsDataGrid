@@ -15,11 +15,21 @@
             <TextBlock>This is a simple custom UWP control</TextBlock>
             <Rectangle Fill="Blue" Height="100" Width="100"/>
             <TextBlock Text="{x:Bind XamlIslandMessage}" FontSize="50"></TextBlock>
-            <!--<controls:DataGrid
-                Height="600" Width="1000" Margin="12" AutoGenerateColumns="True"
-            >
-            </controls:DataGrid>-->
 
+            <RichTextBlock SelectionHighlightColor="Green">
+                <Paragraph>RichTextBlock provides a rich text display container that supports
+                    <Run FontStyle="Italic" FontWeight="Bold">formatted text</Run> ,
+                    <Hyperlink NavigateUri="https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Documents.Hyperlink">hyperlinks</Hyperlink> , inline images, and other rich content.
+                </Paragraph>
+                <Paragraph>RichTextBlock also supports a built-in overflow model.</Paragraph>
+            </RichTextBlock>
+
+            <!--Uncomment lines below to reproduce the bug-->
+            
+            <!--<controls:MarkdownTextBlock Text="**This is *Markdown*!** 😍❤💋🌹🎉😎�🐱‍👤" />-->
+
+            <!--<controls:DataGrid Height="600" Width="1000" Margin="12" AutoGenerateColumns="True" />-->
+            
         </StackPanel>
     </Grid>
 </UserControl>
