@@ -24,11 +24,9 @@
                 <Paragraph>RichTextBlock also supports a built-in overflow model.</Paragraph>
             </RichTextBlock>
 
-            <!--Uncomment lines below to reproduce the bug-->
-            
-            <!--<controls:MarkdownTextBlock Text="**This is *Markdown*!** 😍❤💋🌹🎉😎�🐱‍👤" />-->
+            <controls:MarkdownTextBlock Text="**This is *Markdown*!** 😍❤💋🌹🎉😎�🐱‍👤" />
 
-            <!--<controls:DataGrid Height="600" Width="1000" Margin="12" AutoGenerateColumns="True" />-->
+            <controls:DataGrid Height="600" Width="1000" Margin="12" AutoGenerateColumns="True" />
             
         </StackPanel>
     </Grid>
